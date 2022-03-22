@@ -21,7 +21,7 @@ CUSTOM_DATA
 
 # Resource: Azure Linux Virtual Machine
 resource "azurerm_linux_virtual_machine" "web_linuxvm" {
-  name = "${local.resource_name_prefix}-web-linuxvm"
+  name = "rkterraformweblinuxvm"
   resource_group_name = azurerm_resource_group.rg.name
   location = azurerm_resource_group.rg.location 
   size = var.web_linuxvm_size
