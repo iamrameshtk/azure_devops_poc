@@ -17,6 +17,11 @@ terraform {
   }
 # Terraform State Storage to Azure Storage Container (Values will be taken from Azure DevOps)
   backend "azurerm" {
+    subscription_id = "a5fcbd47-d3ba-4bac-873a-9ca6b162c0ea"
+    resource_group_name = "rk-storage-account-rg"
+    storage_account_name = "rktfstorageaccount001"
+    container_name = "rktfstorageaccount"
+    key = "dev.tfstate"
     
   }
 }
