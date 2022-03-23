@@ -22,7 +22,7 @@ terraform {
     storage_account_name = "rktfstorageaccount001"
     container_name = "rktfstorageaccount"
     key = "dev.tfstate"
-    
+    #Test Change
   }
 }
 
